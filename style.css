@@ -1,0 +1,47 @@
+body {
+  background-color: #1a1a1a;
+  color: white;
+  font-family: Vazir, sans-serif;
+  direction: rtl;
+  padding: 40px;
+  margin: 0;
+  line-height: 2;
+}
+
+.container {
+  display: flex;
+  flex-direction: row-reverse; /* متن راست، عکس چپ */
+  gap: 40px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.text {
+  flex: 2;
+  min-width: 300px;
+}
+
+.images {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.images img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #f9d342;
+}
+
+h1, h2 {
+  color: #f9d342;
+  margin-top: 30px;
+}
+
+p {
+  margin-bottom: 20px;
+  text-align: justify;
+}
